@@ -87,20 +87,20 @@
                             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
                         </div> -->
 
-                        <!--<div>
-  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
-    알림
-  </a>
-<div class="collapse" id="collapseExample">
-  <div class="card card-body">
-    뿡
-  </div>
-</div>
-</div>-->
 
-                        <button type="button" class="btn btn-secondary" data-bs-container="body" data-bs-toggle="popover" data-bs-placement="bottom" data-bs-content="Bottom popover">
-  알림
-</button>
+                        <div>
+                        <a class="white" data-bs-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample" style="width:50px;">
+                            <img src="../../static/auctions/img/alarm1.svg" style = "width:35px;">
+                        </a>
+                            <!--입찰자 == 유저 이면 -->
+                            <!-- {% if product.winner == request.user.username %} -->
+                        <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                        매칭이 완료되었습니다. <a href="{% url 'closedlisting' %}" style="color : blue">확인하세요!
+                        </a></div>
+                        </div>
+                        </div>
+
 
 
 
